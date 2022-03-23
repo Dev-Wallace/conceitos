@@ -9,6 +9,7 @@ function App() {
       <Menu />
 
       <h1>Hello World</h1>
+      <h1>Wallace</h1>
     
       <Button variant="dark">Dark</Button>
 
