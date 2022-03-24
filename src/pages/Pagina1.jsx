@@ -1,13 +1,13 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 
-const Pagina1 = () => {
+const Pagina1 = (props) => {
   return (
     <div>
-        <Card bg="dark" text="light" border="warning" style={{ width: '18rem' }} className="mb-3">
+        <Card bg={props.cor} text="light" border="warning" style={{ width: '18rem' }} className="mb-3">
           <Card.Img variant="top" src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg" />
           <Card.Body>
-            <Card.Title>Àguia</Card.Title>
+            <Card.Title>{props.titulo}</Card.Title>
             <Card.Text>
               Bicho que voa e bica.
             </Card.Text>

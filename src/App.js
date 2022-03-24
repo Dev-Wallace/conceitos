@@ -20,7 +20,7 @@ function App() {
       <Container>
 
         
-      <Pagina1 />
+      <Pagina1 cor="danger" titulo="Àguia americana"/>
 
 
         <h1>Hello World</h1>
