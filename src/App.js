@@ -20,9 +20,10 @@ function App() {
       <Container>
 
         
-      <Pagina1 cor="danger" titulo="Àguia americana"/>
+      <Pagina1 cor="success" cortexto="light" titulo="Àguia americana"/>
 
 
+        <h1 className="text-danger">Hello World RED</h1>
         <h1>Hello World</h1>
 
         <Button variant="dark">Dark</Button>
