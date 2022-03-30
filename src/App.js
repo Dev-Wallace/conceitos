@@ -1,34 +1,29 @@
 import Menu from "./components/Menu";
 import Cartao from "./components/Cartao";
 import Pagina1 from "./pages/Pagina1";
+import Carros from "./pages/Carros";
+import Array from "./pages/Array";
+import Objetos from "./pages/Objetos";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, CardGroup, Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
 
-
-      <Menu />
-
-
-      <Cartao titulo="Imagem" imagem="https://img.freepik.com/fotos-gratis/3d-rendem-de-uma-mesa-de-madeira-com-uma-imagem-defocussed-de-um-barco-em-um-lago_1048-3432.jpg">
-        <p>Exemplo de imagem</p>
-        <Button variant="danger">Detalhes</Button>
-      </Cartao>
-
-      <Container>
-
+      <BrowserRouter>
         
-      <Pagina1 cor="success" cortexto="light" titulo="Àguia americana"/>
+        <Menu />
 
-
-        <h1 className="text-danger">Hello World RED</h1>
-        <h1>Hello World</h1>
-
-        <Button variant="dark">Dark</Button>
-
-      </Container>
+        <Routes>
+          <Route path="/" element={<Carros />} />
+          <Route path="/carros" element={<Carros />} />
+          <Route path="/array" element={<Array />} />
+          <Route path="/objetos" element={<Objetos />} />
+          <Route path="/pagina1" element={<Pagina1 />} />
+        </Routes>
+      </BrowserRouter>
 
     </div>
   );

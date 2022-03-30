@@ -1,9 +1,10 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Button, Card, Container } from 'react-bootstrap'
 
 const Pagina1 = (props) => {
   return (
     <div>
+      <Container>
         <Card bg={props.cor} text={props.cortexto} border="dark" style={{ width: '18rem' }} className="mb-3">
           <Card.Img variant="top" src="https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg" />
           <Card.Body>
@@ -33,6 +34,13 @@ const Pagina1 = (props) => {
             </Card.Text>
           </Card.Body>
         </Card>
+
+        
+        <h1 className="text-danger">Hello World RED</h1>
+        <h1>Hello World</h1>
+
+        <Button variant="dark">Dark</Button>
+      </Container>
     </div>
   )
 }
