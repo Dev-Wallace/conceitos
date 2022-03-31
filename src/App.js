@@ -16,6 +16,7 @@ function App() {
         
         <Menu />
 
+       <Container>   
         <Routes>
           <Route path="/" element={<Carros />} />
           <Route path="/carros" element={<Carros />} />
@@ -23,6 +24,7 @@ function App() {
           <Route path="/objetos" element={<Objetos />} />
           <Route path="/pagina1" element={<Pagina1 />} />
         </Routes>
+       </Container>
       </BrowserRouter>
 
     </div>
