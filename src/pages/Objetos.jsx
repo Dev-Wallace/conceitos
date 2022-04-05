@@ -28,13 +28,11 @@ const Objetos = () => {
         {carros.map(item => (
           <Col>
             <Card bg="light" text="dark" border="dark">
-              <Card.Img variant="top" src={item.foto} />
+              <Card.Img height={180} variant="top" src={item.foto} />
               <Card.Body>
                 <Card.Title>{item.marca + '-' + item.modelo}</Card.Title>
-                <Card.Text>
-                  <p>{'Cor: ' + item.cor}</p>
-                  <p>{'Ano: ' + item.ano}</p>
-                </Card.Text>
+                <Card.Text><strong>Cor: </strong>{item.cor}</Card.Text>
+                <Card.Text><strong>Ano: </strong>{item.ano}</Card.Text>
                 <Button variant="danger">Mais detalhes</Button>
               </Card.Body>
             </Card>
