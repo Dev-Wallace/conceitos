@@ -1,11 +1,13 @@
 import Menu from "./components/Menu";
-import Cartao from "./components/Cartao";
 import Pagina1 from "./pages/Pagina1";
 import Carros from "./pages/Carros";
 import Array from "./pages/Array";
 import Objetos from "./pages/Objetos";
 import Contador from "./pages/Contador";
 import FilmesPopulares from "./pages/filmes/FilmesPopulares";
+import FilmesDetalhes from "./pages/filmes/FilmesDetalhes";
+import FilmesCartazes from "./pages/filmes/FilmesCartazes";
+import FilmesLancamentos from "./pages/filmes/FilmesLancamentos";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -27,6 +29,9 @@ function App() {
           <Route path="/pagina1" element={<Pagina1 />} />
           <Route path="/contador" element={<Contador />} />
           <Route path="/filmes/populares" element={<FilmesPopulares />} />
+          <Route path="/filmes/cartazes" element={<FilmesCartazes />} />
+          <Route path="/filmes/lancamentos" element={<FilmesLancamentos/>} />
+          <Route path="/filmes/:id" element={<FilmesDetalhes />} />
         </Routes>
        </Container>
       </BrowserRouter>

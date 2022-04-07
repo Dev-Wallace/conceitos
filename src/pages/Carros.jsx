@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Carros = () => {
   return (
-    <div>Carros</div>
+    <div>
+      <Link className='btn btn-dark' to={'/objetos'} >Ir para carros</Link>
+    </div>
   )
 }
 

@@ -7,7 +7,7 @@ const Contador = () => {
     let [numero, setNumero] = useState(0)
 
     function somar() {
-        setNumero(numero++)
+        setNumero(++numero)
         console.log(numero)
     }
     function somar5() {
@@ -19,7 +19,7 @@ const Contador = () => {
         console.log(numero)
     }
     function subtrair() {
-        setNumero(numero--)
+        setNumero(--numero)
         console.log(numero)
     }
     function subtrair5() {
