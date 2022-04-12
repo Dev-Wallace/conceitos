@@ -33,7 +33,7 @@ const Contador = () => {
 
     return (
         <div>
-            <h1>Contador</h1>
+            <h1 className='mt-5'>Contador</h1>
 
             <Button variant="dark" onClick={subtrair10}> -10 </Button>
             <Button variant="warning" onClick={subtrair5}> -5 </Button>

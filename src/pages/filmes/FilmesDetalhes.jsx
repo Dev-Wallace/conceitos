@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
-import { Link, useParams } from 'react-router-dom'
+import {     useParams } from 'react-router-dom'
 import apiFilmes from '../../services/apiFIlmes'
 
 const FilmesDetalhes = () => {
@@ -23,13 +23,14 @@ const FilmesDetalhes = () => {
 
             <Row>
                 <Col md={4}>
-                    <Card>
+                    <Card border='secondary'>
                         <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + filme.poster_path} />
                     </Card>
                 </Col>
 
                 <Col md={8}>
                     <p className='fs-5'><strong className='fs-4'>Título Original: </strong>{filme.original_title}</p>
+                    <p className='fs-5'><strong className='fs-4'>Data de Lançamento: </strong>{filme.release_date}</p>
                     <p className='fs-5'><strong className='fs-4'>Slogan: </strong>{filme.tagline}</p>
                     <p className='fs-5'><strong className='fs-4'>Sinopse: </strong>{filme.overview}</p>
                     <p className='fs-5'><strong className='fs-4'>Linguagem Original: </strong>{filme.original_language}</p>

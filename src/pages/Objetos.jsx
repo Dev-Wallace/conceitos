@@ -33,7 +33,7 @@ const Objetos = () => {
                 <Card.Title>{item.marca + '-' + item.modelo}</Card.Title>
                 <Card.Text><strong>Cor: </strong>{item.cor}</Card.Text>
                 <Card.Text><strong>Ano: </strong>{item.ano}</Card.Text>
-                <Button variant="danger">Mais detalhes</Button>
+                <Button variant="warning"> <strong>Mais detalhes</strong> </Button>
               </Card.Body>
             </Card>
           </Col>

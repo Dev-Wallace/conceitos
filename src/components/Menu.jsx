@@ -6,18 +6,18 @@ const Menu = () => {
   return (
     <div>
 
-      <Navbar bg="dark" variant="dark" className="mb-3">
+      <Navbar fixed='top' bg="warning" variant="light" className="mb-3">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home"> <strong>React Conceitos</strong> </Navbar.Brand>
           <Nav className="me-auto">
-            <Link className="nav-link" to="/pagina1">Pagina1</Link>
-            <Link className="nav-link" to="/carros">Carros</Link>
-            <Link className="nav-link" to="/array">Array</Link>
-            <Link className="nav-link" to="/objetos">Objetos</Link>
-            <Link className="nav-link" to="/contador">Contador</Link>
-            <Link className="nav-link" to="/filmes/populares">Filmes Populares</Link>
-            <Link className="nav-link" to="/filmes/cartazes">Filmes Em Cartaz</Link>
-            <Link className="nav-link" to="/filmes/lancamentos">Filmes Lançamentos</Link>
+            <Link className="nav-link" to="/pagina1"> <strong>Pagina1</strong> </Link>
+            <Link className="nav-link" to="/carros"> <strong>Carros</strong> </Link>
+            <Link className="nav-link" to="/array"> <strong>Array</strong> </Link>
+            <Link className="nav-link" to="/objetos"> <strong>Objetos</strong> </Link>
+            <Link className="nav-link" to="/contador"> <strong>Contador</strong> </Link>
+            <Link className="nav-link" to="/filmes/populares"> <strong>Filmes Populares</strong> </Link>
+            <Link className="nav-link" to="/filmes/cartazes"> <strong>Filmes Em Cartaz</strong> </Link>
+            <Link className="nav-link" to="/filmes/lancamentos"> <strong>Filmes Lançamentos</strong> </Link>
           </Nav>
         </Container>
       </Navbar>
