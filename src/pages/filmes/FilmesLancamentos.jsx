@@ -21,14 +21,16 @@ const FilmesLancamentos = () => {
 
       <Row>
         {lancamentos.map(item => (
-          <Col md={3} className='mb-3'>
-            <Card border='secondary'>
-              <Card.Img variant='top' src={'https://image.tmdb.org/t/p/w500/' + item.poster_path} />
+          <Col key={item.id} md={3} className='mb-3'>
+            <Card  border='secondary'>
+              <Link to={"/filmes/" + item.id} >
+                <Card.Img title={item.title} variant='top' src={'https://image.tmdb.org/t/p/w500/' + item.poster_path} />
+              </Link>
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text> <strong>Título Original: </strong> {item.original_title} </Card.Text>
                 <Card.Text> <strong>Popularidade: </strong> {item.popularity} </Card.Text>
-                <Link className='btn btn-warning' to={'/lancamentos/' + item.id}> <strong>Leia Mais</strong> </Link>
+                <Link className='btn btn-warning' to={'/filmes/' + item.id}> <strong>Leia Mais</strong> </Link>
               </Card.Body>
             </Card>
           </Col>
