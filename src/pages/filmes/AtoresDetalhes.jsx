@@ -39,7 +39,7 @@ const AtoresDetalhes = () => {
 
                 <Col md={8}>
                     <p className='fs-5'><strong className='fs-4'>Biografia: </strong>{ator.biography}</p>
-                    <p className='fs-5'><strong className='fs-4'>Data de Aniversário: </strong>{ator.birthday}</p>
+                    <p className='fs-5'><strong className='fs-4'>Data de Nascimento: </strong>{ator.birthday}</p>
                     <p className='fs-5'><strong className='fs-4'>Local de Nascimento: </strong>{ator.place_of_birth}</p>
                     <p className='fs-5'><strong className='fs-4'>Popularidade: </strong>{ator.popularity}</p>
                     <Link className='btn btn-warning' to={-1} > <strong>Voltar</strong> </Link>

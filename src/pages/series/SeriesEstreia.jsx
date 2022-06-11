@@ -20,7 +20,7 @@ const SeriesEstreia = () => {
             <Row>
                 {estreias.map(item => (
                     <Col key={item.id} className='mb-3' md={3}>
-                        <Card border='secondary' >
+                        <Card className='h-100' border='secondary' >
                             <Link to={'/series/' + item.id}>
                                 <Card.Img title={item.name} variant='top' src={'https://image.tmdb.org/t/p/w500/' + item.poster_path} />
                             </Link>

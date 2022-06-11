@@ -60,7 +60,7 @@ const FilmesDetalhes = () => {
                         <Row>
                             {atores.map(item => (
                                 <Col className='mb-3' key={item.id} md={2}>
-                                    <Card title={item.name} border="secondary">
+                                    <Card className='h-100' title={item.name} border="secondary">
                                         <Link to={'/atores/' + item.id}>
                                             <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + item.profile_path} />
                                         </Link>

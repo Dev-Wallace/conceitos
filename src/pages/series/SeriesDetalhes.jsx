@@ -40,7 +40,11 @@ const SeriesDetalhes = () => {
                     <p className='fs-5'><strong className='fs-4'>Título Original: </strong>{serie.original_name}</p>
                     <p className='fs-5'><strong className='fs-4'>Data de Lançamento: </strong>{serie.first_air_date}</p>
                     <p className='fs-5'><strong className='fs-4'>Slogan: </strong>{serie.tagline}</p>
-
+                    {/* <p className='fs-5'><strong className='fs-4'>Gênero: </strong>
+                        {serie.genres.map(item => (
+                            <span key={item.id}>{item.name} | </span>
+                        ))}
+                    </p> */}
                     <p className='fs-5'><strong className='fs-4'>Sinopse: </strong>{serie.overview}</p>
                     <p className='fs-5'><strong className='fs-4'>Linguagem Original: </strong>{serie.original_language}</p>
                     <p className='fs-5'><strong className='fs-4'>Popularidade: </strong>{serie.popularity}</p>
@@ -56,7 +60,7 @@ const SeriesDetalhes = () => {
                 <Row>
                     {temporadas.map(item => (
                         <Col className='mb-3' key={item.id} md={2}>
-                            <Card title={item.name} border="secondary">
+                            <Card className='h-100' title={item.name} border="secondary">
                                 <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + item.poster_path} />
                             </Card>
                         </Col>
@@ -70,7 +74,7 @@ const SeriesDetalhes = () => {
                 <Row>
                     {atores.map(item => (
                         <Col className='mb-3' key={item.id} md={2}>
-                            <Card title={item.name} border="secondary">
+                            <Card className='h-100' title={item.name} border="secondary">
                                 <Link to={'/atores/' + item.id}>
                                     <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + item.profile_path} />
                                 </Link>
